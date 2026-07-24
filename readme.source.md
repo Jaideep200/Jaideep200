@@ -267,13 +267,5 @@
 ```
 
 
-```aura width=860 height=140
-(function() {
- var stats = [
-   { label: 'Repos', value: String(github.stats.totalRepos), color: '#a78bfa' },
-   { label: 'Stars', value: String(github.stats.totalStars), color: '#60a5fa' },
-   { label: 'Commits', value: String(github.stats.totalCommits), color: '#f59e0b' },
- ];
-
 
 
