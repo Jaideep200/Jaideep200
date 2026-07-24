@@ -265,29 +265,29 @@
  );
 })()
 ```
-```aura width=860 height=220
+```aura width=860 height=280
 (function () {
 
 const projects = [
   {
-    name: "AI Resume Analyzer",
-    tech: "Python • Streamlit • Gemini",
-    desc: "Analyze resumes and provide AI-powered feedback."
+    name: " AviTrack AI ",
+    tech: "Python • Flask • Scikit-learn • Librosa ",
+    desc: "AI-Powered Bird Audio Analysis & Population Estimation."
   },
   {
-    name: "DevOps Portfolio",
-    tech: "Docker • GitHub Actions • AWS",
-    desc: "CI/CD pipelines and cloud deployment examples."
+    name: "Netflix-data-Analysis",
+    tech: "Pandas • Numpy • Matplotlib • Google Colab ",
+    desc: "Netflix Data Analysis using Python."
   },
   {
-    name: "Network Scanner",
-    tech: "Python • Scapy",
-    desc: "Discover hosts and scan local networks."
+    name: "CyberShield AI - Phishing Detection System",
+    tech: "Python • Chrome Extension • Flask ",
+    desc: "CyberShield AI is a Machine Learning based phishing URL detection system."
   },
   {
-    name: "Linux Automation",
-    tech: "Bash • Linux",
-    desc: "Automation scripts for servers and daily tasks."
+    name: "Cyber-X Password Analyzer",
+    tech: " Python • Regex • CLI • Cybersecurity",
+    desc: "Analyze password strength with Python ."
   }
 ];
 
