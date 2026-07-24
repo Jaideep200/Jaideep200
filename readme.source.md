@@ -347,9 +347,10 @@ FEATURED PROJECTS
 </div>
 
 <div style={{
-display:'grid',
-gridTemplateColumns:'1fr 1fr',
-gap:12,
+display: 'flex',
+flexWrap: 'wrap',
+gap: 16,
+justifyContent: 'space-between',
 zIndex:1
 }}>
 
