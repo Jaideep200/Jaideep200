@@ -265,6 +265,145 @@
  );
 })()
 ```
+```aura width=860 height=220
+(function () {
+
+const projects = [
+  {
+    name: "AI Resume Analyzer",
+    tech: "Python • Streamlit • Gemini",
+    desc: "Analyze resumes and provide AI-powered feedback."
+  },
+  {
+    name: "DevOps Portfolio",
+    tech: "Docker • GitHub Actions • AWS",
+    desc: "CI/CD pipelines and cloud deployment examples."
+  },
+  {
+    name: "Network Scanner",
+    tech: "Python • Scapy",
+    desc: "Discover hosts and scan local networks."
+  },
+  {
+    name: "Linux Automation",
+    tech: "Bash • Linux",
+    desc: "Automation scripts for servers and daily tasks."
+  }
+];
+
+return (
+<div style={{
+  width:'100%',
+  height:'100%',
+  background:'#08080c',
+  borderRadius:16,
+  border:'1px solid rgba(110,80,220,0.18)',
+  padding:'22px 28px',
+  fontFamily:'Inter',
+  display:'flex',
+  flexDirection:'column',
+  gap:16,
+  position:'relative',
+  overflow:'hidden'
+}}>
+
+<style>{`
+@keyframes glow {
+0%,100%{opacity:.45;}
+50%{opacity:.9;}
+}
+#bg{
+animation:glow 8s ease-in-out infinite;
+}
+`}</style>
+
+<svg id="bg" width="860" height="220"
+style={{position:'absolute',left:0,top:0}}>
+<defs>
+<radialGradient id="g1">
+<stop offset="0%" stopColor="rgba(120,60,255,.35)" />
+<stop offset="70%" stopColor="transparent" />
+</radialGradient>
+
+<radialGradient id="g2">
+<stop offset="0%" stopColor="rgba(0,150,255,.25)" />
+<stop offset="70%" stopColor="transparent" />
+</radialGradient>
+</defs>
+
+<ellipse cx="180" cy="220" rx="260" ry="170" fill="url(#g1)" />
+<ellipse cx="650" cy="210" rx="220" ry="150" fill="url(#g2)" />
+
+</svg>
+
+<div style={{
+fontSize:12,
+letterSpacing:3,
+fontWeight:700,
+color:'#9f8cff',
+zIndex:1
+}}>
+FEATURED PROJECTS
+</div>
+
+<div style={{
+display:'grid',
+gridTemplateColumns:'1fr 1fr',
+gap:12,
+zIndex:1
+}}>
+
+{projects.map(function(project){
+
+return(
+<div
+key={project.name}
+style={{
+padding:'14px',
+borderRadius:12,
+background:'rgba(255,255,255,.03)',
+border:'1px solid rgba(120,90,255,.18)',
+display:'flex',
+flexDirection:'column',
+gap:6
+}}
+>
+
+<div style={{
+fontSize:16,
+fontWeight:700,
+color:'#ffffff'
+}}>
+{project.name}
+</div>
+
+<div style={{
+fontSize:12,
+color:'#7aa9ff',
+fontWeight:600
+}}>
+{project.tech}
+</div>
+
+<div style={{
+fontSize:12,
+color:'rgba(230,230,255,.75)',
+lineHeight:1.5
+}}>
+{project.desc}
+</div>
+
+</div>
+);
+
+})}
+
+</div>
+
+</div>
+);
+})()
+```
 
 
 
