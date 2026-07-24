@@ -146,7 +146,7 @@
     ? github.languages.slice(0, 6).map(function(l) {
         return l.name;
       })
-    : ['Python', 'JavaScript', 'C++', 'SQL', 'Docker', 'Linux'];
+    : ['Python', 'JavaScript', 'SQL', 'Linux'];
  var categories = [
    { title: 'Languages', color: '#a78bfa', items: topLangs },
    { title: 'Frameworks', color: '#60a5fa', items: ['React Native', 'React', 'Next.js'] },
